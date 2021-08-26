@@ -1,5 +1,7 @@
 # Black Slate
 
+![firefox theme](img/firefox.png "Firefox theme")
+
 A dark minimal look for firefox
 
 # Installation
