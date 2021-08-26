@@ -1,0 +1,39 @@
+@-moz-document url(about:home), url(about:newtab), url(about:privatebrowsing) {
+    
+
+    body::before {
+        content: "" ;
+        z-index: -1 ;
+        position: fixed ;
+        top: 0 ;
+        left: 0 ;
+        background: #181A1B center ;
+        background-size: cover ;
+        width: 100vw ;
+        height: 100vh ;
+    }
+	.personalize-button{
+		background-color: #181A1B !important;
+	}
+	
+	.outer-wrapper.newtab-experience .top-site-outer .tile{
+	--newtab-topsites-background-color: #181a1b;
+	--newtab-inner-box-shadow-color-nte: #181a1b;
+	--newtab-tile-shadow-secondary: #181a1b;
+	}
+	.outer-wrapper.newtab-experience .search-wrapper .search-handoff-button, .outer-wrapper.newtab-experience .search-wrapper input{
+		--newtab-textbox-background-color: #181a1b;
+	}
+	.search-inner-wrapper { display:none !important; } 
+	.non-collapsible-section {display:none !important;}
+	.personalize-button { color:#353435 !important;}
+	
+	.outer-wrapper.newtab-experience .top-site-outer .tile{
+		box-shadow: none !important;
+	}
+
+}
+#navigator-toolbox {
+    border-bottom: 0px solid var(--chrome-content-separator-color);
+}
+

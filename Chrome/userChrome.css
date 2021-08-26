@@ -1,0 +1,90 @@
+
+#navigator-toolbox { 
+	--tabs-border-color: transparent !important;
+	border:0 !important;
+}
+#urlbar-background{ border-radius: 0 !important; border: none !important; }
+
+
+/*** Tighten up drop-down/context/popup menu spacing ***/
+
+menupopup > menuitem, menupopup > menu {
+  padding-block: 4px !important;
+}
+:root {
+  --arrowpanel-menuitem-padding: 4px 8px !important;
+}
+/*** Proton Tabs Tweaks ***/
+
+/* Adjust tab corner shape, optionally remove space below tabs */
+
+#tabbrowser-tabs {
+    --user-tab-rounding: 0px;
+}
+@media (-moz-proton) {
+    .tab-background {
+        border-radius: var(--user-tab-rounding) var(--user-tab-rounding) 0px 0px !important;
+        margin-block: 1px 0 !important;
+    }
+}
+
+/* Tweak Options as of 5/30/2021; Generated Thu Jun 03 2021 13:28:57 GMT+0545 (Nepal Time) */
+#sidebar-box {
+    --sidebar-background-color: #181A1B !important;
+    --sidebar-color: green; !important;
+}
+
+/* Remove border padding around sidebar */
+ .sidebar-placesTree { 
+     border: none !important;
+     padding-top: 10px !important;
+     background: #181A1B !important; }
+
+
+
+/* Actual separators */
+  .sidebar-placesTreechildren::-moz-tree-separator  {
+      border: 2px solid white !important;
+      border-width: 2px !important; }
+
+/* Folders -> Text (Unopened) */
+  .sidebar-placesTreechildren::-moz-tree-cell-text(container) { color: #9a948a !important;
+      font-weight: bold !important; 
+      padding-left: 5px !important; }
+
+/* Folders -> Text (Opened) */
+.sidebar-placesTreechildren::-moz-tree-cell-text(container, open) { color: #9a948a !important; }
+
+/* Bookmarks */
+.sidebar-placesTreechildren::-moz-tree-cell-text(leaf) { color: white !important; 
+    padding-left: 3px !important; }
+
+/* Bookmarks (hover) */
+.sidebar-placesTreechildren::-moz-tree-cell-text(leaf, hover)  { color: cyan !important; }
+
+
+
+#sidebar-search-container {
+    padding: 0px;
+}
+/* Standard folder */
+#bookmarks-view treechildren::-moz-tree-image(container),
+#PlacesToolbarItems toolbarbutton[container="true"] .toolbarbutton-icon,
+#PlacesToolbarItems menu[container="true"] .menu-iconic-left,
+#BMB_bookmarksPopup menu[container="true"] .menu-iconic-icon {
+  fill: #9a948a !important; /* slightly muted gold */
+}
+
+#sidebar-box{ background-color: rgb(42,42,46) !important; }
+#sidebar-box,
+.sidebar-panel{ color: #9a948a !important; }
+
+#bookmarks-view treechildren::-moz-tree-row(selected) {
+  background-color: #1d2021 !important;
+}
+/* hide tabs for single tabs
+#tabbrowser-tabs tab:only-of-type {
+	display: none !important;
+}
+
+*/
