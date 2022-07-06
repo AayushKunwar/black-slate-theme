@@ -1,0 +1,51 @@
+/** Import Lepton stylesheet (Chrome) @import url("css/leptonChrome.css");*****************************************/
+
+
+
+/** Add your custom styles below **********************************************/
+
+/* Enable option to edit bookmark URLs under Add Bookmark (blue star) menu */
+/*
+ * #editBMPanel_locationRow {
+ *   visibility: visible !important;
+ * }
+*/
+
+/* Disable Email Image/Audio/Video and Set as Desktop Background context menu items */
+/*
+ * #context-sendimage,
+ * #context-sendvideo,
+ * #context-sendaudio,
+ * #context-setDesktopBackground {
+ *   display: none !important;
+ * }
+*/
+:root {
+  --tab-border-radius: 0px !important;
+
+
+}
+/* show close button on hover might have some redundant code */
+.tabbrowser-tab:not([selected]):not([pinned]) .tab-close-button {
+  visibility:hidden !important;
+}
+#tabbrowser-tabs .tabbrowser-tab .tab-close-button { visibility:hidden!important; }
+#tabbrowser-tabs .tabbrowser-tab:hover .tab-close-button { visibility:visible!important; }
+.tabbrowser-tab:not([selected]):not([pinned]):hover .tab-close-button {
+  visibility:visible !important;
+}
+
+/* make the close button more clearly visible on hover */
+.tab-close-button:hover {
+	display:content!important;
+	background-color: rgba(255,0,0,.7) !important;
+	fill: white !important;
+}
+#tabbrowser-tabs{
+	--tab-overflow-pinned-tabs-width: 1px !important;
+}
+#TabsToolbar #firefox-view-button[open] > .toolbarbutton-icon:-moz-lwtheme, .tab-background[selected]:-moz-lwtheme {
+  outline: none !important;
+  border: 1px solid #f1f1f1 !important;
+  border-bottom: none !important;
+}

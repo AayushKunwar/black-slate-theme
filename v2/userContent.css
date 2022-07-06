@@ -1,0 +1,18 @@
+/** Import Lepton stylesheet (Content) @import url("css/leptonContent.css");****************************************/
+
+
+/** Add your custom styles below **********************************************/
+@-moz-document url("about:home"),url-prefix('about:newtab'), url-prefix('about:home') {
+.search-wrapper .logo-and-wordmark {	
+	display: none !important;
+	}
+.top-sites-list:not(.dnd-active) .top-site-outer:is(.active, :focus, :hover){
+		background: transparent !important;
+	}
+	body[lwt-newtab-brighttext]{
+		--newtab-background-color: #181a1b !important;
+		--newtab-background-color-secondary: #181a1b !important;
+		--newtab-text-primary-color: #FBF5F3 !important;
+		--newtab-primary-action-background: #FBF5F3 !important;
+		
+}
